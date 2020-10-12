@@ -1,0 +1,24 @@
+.site-nav__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__iteam ~ .site-nav__iteam {
+  margin-left: 35px;
+}
+
+.site-nav__link {
+  text-decoration: none;
+  color: $white;
+  transition: color 0.3s ease,
+  opacity 0.3s ease;
+
+  &:hover {
+    color: $orange;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
