@@ -9,6 +9,9 @@
 <body>
 
   <header class="site-header">
+
+    <h1 class="visually-hidden">This site about Dental Practice, welcome</h1>
+
     <div class="container site-header__container">
 
       <div class="site-header__white white-header">
@@ -88,8 +91,6 @@
 
   <main class="site-main">
 
-    <h1 class="visually-hidden">This site about Dental Practice, welcome</h1>
-
     <section class="site-intro">
       <div class="container site-intro__container">
         <div class="site-intro__text">
@@ -111,9 +112,48 @@
 
       <section class="site-appointment">
         <div class="container site-appointment__container">
-          
+          <ul class="site-appointment__list">
+            <li class="site-appointment__iteam site-appointment__iteam--treatment">
+              <div class="site-appointment__inner">
+                <h4 class="site-appointment__heading">Treatment</h4>
+                <p class="site-appointment__text">All types of dental treatment are carried out using the most modern technologies.</p>
+              </div>
+            </li>
+            <li class="site-appointment__iteam site-appointment__iteam--prosthetics">
+              <div class="site-appointment__inner">
+                <h4 class="site-appointment__heading">Prosthetics</h4>
+                <p class="site-appointment__text">We will help you find the most convenient and aesthetically attractive version of the prosthesis.</p>
+              </div>
+            </li>
+          </ul><!-- site-appointment__list -->
+
+          <form class="site-appointment__form form" action="http://echo.htmlacademy.ru" method="POST">
+            <h3 class="form__heading">Appointment</h3>
+            <div class="form__inner">
+              <label class="form__label" for="name"></label>
+              <input class="form__input" id="name" type="text" placeholder="Name">
+            </div>
+            <div class="form__inner">
+              <label class="form__label" for="tel"></label>
+              <input class="form__input" id="tel" type="tel" placeholder="Phone" pattern="^(?:(?:\(?(?:00|\+)([1-4]\d\d|[1-9]\d?)\)?)?[\-\.\ \\\/]?)?((?:\(?\d{1,}\)?[\-\.\ \\\/]?){0,})(?:[\-\.\ \\\/]?(?:#|ext\.?|extension|x)[\-\.\ \\\/]?(\d+))?$">
+            </div>
+
+            <button class="form__button">Appointment</button>
+
+            <div class="form__bottom">
+              <p class="form__text">I give my consent to the storage and processing of personal data</p>
+
+              <div class="form__true"></div>
+            </div>
+          </form>
+        </div><!-- container site-appointment__container -->
+      </section><!-- site-appointment -->
+
+      <section class="site-services">
+        <div class="container">
+
         </div>
-      </section>
+      </section><!-- site-services -->
   </main><!-- site-main -->
 
 
