@@ -57,10 +57,30 @@
 
 .site-intro__prev--button {
   border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .site-intro__next--button {
   border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .site-intro__prev--img {
