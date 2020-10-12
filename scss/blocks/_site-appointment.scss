@@ -1,0 +1,74 @@
+.site-appointment__container {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+}
+
+.site-appointment__list {
+  @include reset-list;
+  display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.site-appointment__iteam {
+  width: 300px;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: $orange;
+
+  &--treatment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $orange;
+
+  &::before {
+    display: block;
+    margin-bottom: 19px;
+    width: 87px;
+    height: 86px;
+    background-image: url(../../img/treatment.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    content: "";
+    }
+  }
+
+  &--prosthetics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $orange-light;
+
+    &::before {
+      display: block;
+      margin-bottom: 19px;
+      width: 87px;
+      height: 87px;
+      background-image: url(../../img/prosthetics.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      content: "";
+    }
+  }
+}
+
+.site-appointment__heading {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  color: $black;
+}
+
+.site-appointment__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+}
