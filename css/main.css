@@ -395,6 +395,7 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  color: #272727;
 }
 
 img {
@@ -427,5 +428,238 @@ img {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.site-header__container {
+  position: relative;
+  z-index: 1;
+}
+
+.site-header__white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.white-header__mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobile {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.mobile:hover {
+  opacity: 0.8;
+}
+
+.mobile:active {
+  opacity: 0.6;
+}
+
+.mobile__link {
+  display: block;
+  text-decoration: none;
+  color: #272727;
+}
+
+.mobile__icon {
+  display: inline-block;
+  margin-right: 7px;
+  width: 29px;
+  height: 29px;
+}
+
+.mobile__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.mobile__number {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+.site-header__working-day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.working-day__img {
+  display: inline-block;
+  margin-right: 7px;
+  width: 29px;
+  height: 29px;
+}
+
+.working-day__open {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #00B007;
+}
+
+.working-day__clock {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.site-header__blue {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 30px;
+  border-radius: 5px;
+  background-color: #0055B8;
+}
+
+.site-logo--blue {
+  display: none;
+}
+
+.site-logo__social {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__iteam ~ .social__iteam {
+  margin-left: 13px;
+}
+
+.social__link {
+  display: block;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.social__link:hover {
+  opacity: 0.8;
+}
+
+.social__link:active {
+  opacity: 0.6;
+}
+
+.social__img {
+  display: inline-block;
+}
+
+.social__img--vk {
+  width: 28px;
+  height: 28px;
+}
+
+.social__img--instagram {
+  width: 16px;
+  height: 16px;
+}
+
+.social__img--twitter {
+  width: 18px;
+  height: 18px;
+}
+
+.site-logo__link {
+  display: block;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.site-logo__link:hover {
+  opacity: 0.8;
+}
+
+.site-logo__link:active {
+  opacity: 0.6;
+}
+
+.site-logo__img {
+  display: inline-block;
+  width: 103px;
+  height: 56px;
+}
+
+.site-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-nav__iteam ~ .site-nav__iteam {
+  margin-left: 35px;
+}
+
+.site-nav__link {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: color 0.3s ease, opacity 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.site-nav__link:hover {
+  color: #ffd600;
+}
+
+.site-nav__link:active {
+  opacity: 0.6;
+}
+
+.site-intro__text {
+  padding-top: 307px;
 }
 /*# sourceMappingURL=main.css.map */
