@@ -1,0 +1,150 @@
+.site-header__container {
+  // width: 100%;
+  // padding-top: 20px;
+  // padding-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+// white-header
+.site-header__white {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.white-header__mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.mobile__link {
+  display: block;
+  text-decoration: none;
+  color: $black;
+}
+
+.mobile__icon {
+  display: inline-block;
+  margin-right: 7px;
+  width: 29px;
+  height: 29px;
+}
+
+.mobile__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.mobile__number {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+.site-header__working-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.working-day__img {
+  display: inline-block;
+  margin-right: 7px;
+  width: 29px;
+  height: 29px;
+}
+
+.working-day__open {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: $green;
+}
+
+.working-day__clock {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+// blue-header
+.site-header__blue {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 30px;
+  border-radius: 5px;
+  background-color: $blue;
+}
+
+.site-logo--blue {
+  display: none;
+}
+
+.site-logo__social {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+}
+
+.social__iteam ~ .social__iteam {
+  margin-left: 13px;
+}
+
+.social__link {
+  display: block;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.social__img {
+  display: inline-block;
+
+  &--vk {
+    width: 28px;
+    height: 28px;
+  }
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--twitter {
+    width: 18px;
+    height: 18px;
+  }
+}
