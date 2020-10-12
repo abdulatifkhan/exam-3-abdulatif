@@ -1,14 +1,11 @@
 .site-appointment__container {
-  display: flex;
-  // align-items: center;
+  display: flex;  
   justify-content: center;
 }
 
 .site-appointment__list {
   @include reset-list;
   display: flex;
-  // align-items: center;
-  // justify-content: center;
 }
 
 .site-appointment__iteam {
@@ -33,6 +30,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    mix-blend-mode: multiply;
     content: "";
     }
   }
@@ -52,6 +50,7 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
+      mix-blend-mode: multiply;
       content: "";
     }
   }

@@ -808,6 +808,7 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  mix-blend-mode: multiply;
   content: "";
 }
 
@@ -834,6 +835,7 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  mix-blend-mode: multiply;
   content: "";
 }
 
@@ -883,6 +885,8 @@ img {
   border-radius: 5px;
   color: rgba(255, 255, 255, 0.5);
   background-color: transparent;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .form__button {
@@ -891,6 +895,14 @@ img {
   background-color: #ffd600;
   border: none;
   border-radius: 5px;
+}
+
+.form__button:hover {
+  opacity: 0.8;
+}
+
+.form__button:active {
+  opacity: 0.6;
 }
 
 .form__bottom {
@@ -919,5 +931,195 @@ img {
   height: 35px;
   border: 1px solid #fff;
   border-radius: 5px;
+}
+
+.site-services__container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.site-services {
+  background-image: url(../../img/logo-light.png);
+  background-repeat: no-repeat;
+  background-position: center 90px;
+  background-size: 262px 94px;
+}
+
+.site-services__heading {
+  margin: 0;
+  margin-bottom: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.site-services__heading::before {
+  display: block;
+  margin-bottom: 16px;
+  width: 50px;
+  height: 4px;
+  background-color: #ffd600;
+  content: "";
+}
+
+.site-services__text {
+  margin: 0;
+  margin-bottom: 35px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #4d4d4d;
+}
+
+.site-services__wrapper-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.site-services__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.site-services__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding: 20px 20px 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.services-button__img {
+  display: inline-block;
+  width: 42px;
+  height: 49px;
+}
+
+.service__iteam ~ .service__iteam {
+  margin-left: 34px;
+}
+
+.service__iteam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 240px;
+  padding: 30px 60px 24px 60px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.service__iteam::before {
+  display: block;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  content: "";
+}
+
+.service__iteam--dental-treatment::before {
+  width: 69px;
+  height: 68px;
+  background-image: url(../../img/dental-treatment.png);
+}
+
+.service__iteam--hygiene::before {
+  width: 77px;
+  height: 66px;
+  background-image: url(../../img/hygiene.png);
+}
+
+.service__iteam--diagnostics::before {
+  width: 69px;
+  height: 68px;
+  background-image: url(../../img/diagnostics.png);
+}
+
+.service__iteam--childrens-dentistry::before {
+  width: 73px;
+  height: 62px;
+  background-image: url(../../img/childrens-dentistry.png);
+}
+
+.service__heading {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.service__prices {
+  margin: 0;
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.service__prices::before {
+  display: block;
+  margin-bottom: 13px;
+  width: 25px;
+  height: 2px;
+  background-color: #0a60c3;
+  content: "";
+}
+
+.price__old {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.price__current {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0a60c3;
 }
 /*# sourceMappingURL=main.css.map */
