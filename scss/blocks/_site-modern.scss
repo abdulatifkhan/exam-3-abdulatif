@@ -1,0 +1,114 @@
+.site-modern__container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.site-modern__img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: calc(50% + 130px);
+  width: 750px;
+  height: 613px;
+}
+
+.site-modern__inner {
+  width: 750px;
+  margin-left: auto;
+}
+
+.site-modern__heading {
+  margin: 0;
+  padding-bottom: 15px;
+  width: 385px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  background-image: url(../../img/logo-light.png);
+  background-repeat: no-repeat;
+  background-position: 10px 25px;
+  background-size: 262px 94px;
+
+  &::before {
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 16px;
+    width: 50px;
+    height: 4px;
+    background-color: $orange;
+    content: "";
+  }
+}
+
+.site-modern__text {
+  margin: 0;
+  margin-bottom: 27px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: $dark;
+}
+
+.site-modern__list {
+  @include reset-list;
+}
+
+.modern-list__iteam:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.modern-list__iteam {
+  display: flex;
+  align-items: flex-start;
+
+  &::before {
+    display: block;
+    margin-right: 33px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: "";
+  }
+
+  &--expert::before {
+    width: 95px;
+    height: 67px;
+    background-image: url(../../img/expert-class.png);
+  }
+
+  &--technology::before {
+    width: 72px;
+    height: 70px; 
+    background-image: url(../../img/technology.png);
+  }
+
+  &--technology::before {
+    width: 142px;
+    height: 70px;
+    background-image: url(../../img/technology.png);
+  }
+
+  &--location::before {
+    width: 62px;
+    height: 62px; 
+    background-image: url(../../img/location.png);
+  }
+}
+
+.modern-list__heading {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 21px;
+  color: $dark;
+}
+
+.modern-list__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+ line-height: 20px;
+  color: $black-light;
+}
