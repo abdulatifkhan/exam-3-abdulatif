@@ -2,6 +2,7 @@
   @include reset-list;
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .site-nav__iteam ~ .site-nav__iteam {
