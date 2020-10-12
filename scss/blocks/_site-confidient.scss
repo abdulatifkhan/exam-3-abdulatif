@@ -1,0 +1,81 @@
+.site-confidient__container {
+  position: relative;
+  z-index: 1;
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+}
+
+.site-confidient__inner {
+  width: 785px;
+  margin-right: auto;
+  padding-left: 15px;
+  background-image: url(../../img/logo-light.png);
+  background-repeat: no-repeat;
+  background-position: 525px 70px;
+  background-size: 262px 94px;
+}
+
+.site-confidient__header {
+  margin: 0;
+  margin-bottom: 34px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: $black;
+
+  &::before {
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    width: 50px;
+    height: 4px;
+    background-color: $orange;
+    content: "";
+  }
+}
+
+.site-confidient__text {
+  margin: 0;
+  margin-bottom: 34px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: $dark;
+}
+
+.site-confidient__sign-learn {
+  width: 390px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.site-confidient__sign {
+  display: inline-block;
+  margin-right: 36px;
+  width: 85px;
+  height: 70px;
+}
+
+.site-confidient__learn {
+  display: block;
+  padding: 25px 85px;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  color: $white;
+  background-color: $blue;
+  border-radius: 5px;
+}
+
+.site-confidient__img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: calc(50% + 210px);
+  display: inline-block;
+  width: 750px;
+  height: 600px;
+}
