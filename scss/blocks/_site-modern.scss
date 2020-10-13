@@ -113,3 +113,46 @@
  line-height: 20px;
   color: $black-light;
 }
+
+@include breakpoint-down (1024px) {
+
+}
+
+@include breakpoint-down (375px) {
+  .site-modern__container {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .site-modern__img {
+    position: relative;
+    z-index: 10;
+    // top: 0;
+    // right: calc(50% + 210px);
+    display: inline-block;
+    width: 455px;
+    height: 304px;
+  }
+
+  .site-modern__inner {
+    width: 330px;
+    margin: 0;
+  }
+
+  .site-modern__heading {
+    width: 330px;
+  }
+
+  .modern-list__iteam {
+    align-items: center;
+  }
+
+  .modern-list__heading {
+    width: 172px;
+    // margin: 0;
+  }
+
+  .modern-list__text {
+    display: none;
+  }
+}

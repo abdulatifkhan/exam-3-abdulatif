@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dental Practice</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
 
-  <header class="site-header">
+  <h1 class="visually-hidden">This site about Dental Practice, welcome</h1>
 
-    <h1 class="visually-hidden">This site about Dental Practice, welcome</h1>
+  <header class="site-header">
 
     <div class="container site-header__container">
 
@@ -20,9 +20,9 @@
             <img class="mobile__icon" src="img/phone.png" alt="Phone icon" width="29" height="29" srcset="img/phone.png 1x, img/phone@2x.png 2x">
             <div class="mobile__text-number">
               <p class="mobile__text">Contact us</p>
-              <p class="mobile__number">+7(342)216-22-27</a></p>
+              <p class="mobile__number">+7(342)216-22-27</p>
+            </div>
           </a>
-          </div>
         </div><!-- white-header__mobile mobile -->
 
         <div class="site-header__logo site-logo">
@@ -44,7 +44,7 @@
       <div class="site-header__blue blue-header">
         <div class="site-header__logo site-logo site-logo--blue">
           <a class="site-logo__link" href="index.html">
-            <img class="site-logo__img" src="img/smile.png" alt="Site logo" width="103" height="56" srcset="img/smile.png 1x, img/smile@2x.png 2x">
+            <img class="site-logo--blue" src="img/mini-logo.png" alt="Site logo" width="140" height="21" srcset="img/mini-logo.png 1x, img/mini-logo@2x.png 2x">
           </a>
         </div><!-- site-header__logo site-logo -->
 
@@ -85,6 +85,8 @@
             </a>
           </li><!-- social__iteam -->
         </ul>
+
+        <div class="menu-togler"><img class="menu-togler-img" src="img/hamburger.png" alt="Menu togller" width="25" height="18" srcset="img/hamburger.png 1x, img/hamburger@2x.png 2x"></div>
       </div><!-- site-header__blue blue-header -->
     </div><!-- container site-header__container -->
   </header><!-- site-header -->
@@ -96,7 +98,9 @@
         <div class="site-intro__text">
           <p class="site-intro__info">Modern technology and expert-class dentists</p>
           <h2 class="site-intro__heading">Get a brilliant smile for every day</h2>
-          <a class="site-intro__button" type="button">GET</a>
+          <div class="site-intro__button--wrapper">
+            <a class="site-intro__button" type="button">GET</a>
+          </div>
 
           <div class="site-intro__next-prev">
             <button class="site-intro__prev--button">
@@ -107,7 +111,8 @@
             </button>
           </div><!-- site-intro__next-prev -->
         </div><!-- site-intro__text -->
-      </div><!-- container site-intro__container -->
+
+      </div><!-- container--wide site-intro__container -->
       </section><!-- site-intro -->
 
       <section class="site-appointment">
@@ -130,12 +135,12 @@
           <form class="site-appointment__form form" action="http://echo.htmlacademy.ru" method="POST">
             <h3 class="form__heading">Appointment</h3>
             <div class="form__inner">
-              <label class="form__label" for="name"></label>
-              <input class="form__input" id="name" type="text" placeholder="Name">
+              <label class="form__label visually-hidden" for="name">Write your name</label>
+              <input class="form__input" id="name" name="name" type="text" placeholder="Name">
             </div>
             <div class="form__inner">
-              <label class="form__label" for="tel"></label>
-              <input class="form__input" id="tel" type="tel" placeholder="Phone" pattern="^(?:(?:\(?(?:00|\+)([1-4]\d\d|[1-9]\d?)\)?)?[\-\.\ \\\/]?)?((?:\(?\d{1,}\)?[\-\.\ \\\/]?){0,})(?:[\-\.\ \\\/]?(?:#|ext\.?|extension|x)[\-\.\ \\\/]?(\d+))?$">
+              <label class="form__label visually-hidden" for="tel">Write your mobile phone</label>
+              <input class="form__input" id="tel" type="tel" name="tel" placeholder="Phone" pattern="^(?:\d{10,12}|\+\d{10,12}|\w+@\w+\.\w{2,4})$">
             </div>
 
             <button class="form__button">Appointment</button>
@@ -206,7 +211,21 @@
 
       <section class="site-modern">
         <div class="container--wide site-modern__container">
-          <img class="site-modern__img" src="img/modern-section.jpg" alt="Doctor and little girl" width="750" height="613" srcset="img/modern-section.jpg 1x, img/modern-section@2x.jpg 2x">
+          <!-- <img class="site-modern__img" src="img/modern-section.jpg" alt="Doctor and little girl" width="750" height="613" srcset="img/modern-section.jpg 1x, img/modern-section@2x.jpg 2x"> -->
+
+      <picture>
+        <!-- max-width 375px webp -->
+        <source type="image/webp" media="(max-width:375px)" srcset="img/mini-modern-section.webp 1x, img/mini-modern-section@2x.webp 2x">
+
+        <!-- max-width 375px -->
+        <source media="(max-width:375px)" srcset="img/mini-modern-section.jpg 1x, img/mini-modern-section@2x.jpg 2x">
+  
+        <!-- Default image webp -->
+        <source type="image/webp" srcset="img/modern-section.webp 1x, img/modern-section@2x.webp 2x">
+  
+        <!-- Default image -->
+        <img class="site-modern__img" src="img/modern-section.jpg" alt="Doctor and little girl" width="750" height="613" srcset="img/modern-section.jpg 1x, img/modern-section@2x.jpg 2x">
+      </picture>
 
           <div class="site-modern__inner">
             <h2 class="site-modern__heading">Modern technology and expert-class dentists</h2>
@@ -247,8 +266,10 @@
 
       <section class="site-professional">
         <div class="container site-professional__container">
-          <h2 class="site-professional__header">Professional team</h2>
-          <p class="site-professional__text">Dental Practice employs orthodontists and orthopedists, surgeons and therapists, as well as children's dentists.<br>All 13 dentists of our center are highly qualified specialists with extensive experience.</p>
+          <div class="site-professional__bundle">
+            <h2 class="site-professional__header">Professional team</h2>
+            <p class="site-professional__text">Dental Practice employs orthodontists and orthopedists, surgeons and therapists, as well as children's dentists.<br>All 13 dentists of our center are highly qualified specialists with extensive experience.</p>
+          </div>
 
           <div class="site-professional__inner">
             <button class="site-services__button services-button">
@@ -261,12 +282,12 @@
                 <p class="professional-list__name">Anna Petrova</p>
                 <p class="professional-list__possess">Expert-class dentist</p>
               </li>
-              <li class="professional-list__iteam">
+              <li class="professional-list__iteam professional-list__iteam--other">
                 <img class="professional-list__img" src="img/ivan-ivanov.jpg" alt="Anna Petrovna image" width="300" height="350" srcset="img/ivan-ivanov.jpg 1x, img/ivan-ivanov@2x.jpg 2x">
                 <p class="professional-list__name">Ivan Ivanov</p>
                 <p class="professional-list__possess">Expert-class dentist</p>
               </li>
-              <li class="professional-list__iteam">
+              <li class="professional-list__iteam professional-list__iteam--other">
                 <img class="professional-list__img" src="img/larisa-vasileva.jpg" alt="Anna Petrovna image" width="300" height="350" srcset="img/larisa-vasileva.jpg 1x, img/larisa-vasileva@2x.jpg 2x">
                 <p class="professional-list__name">Larisa Vasileva</p>
                 <p class="professional-list__possess">Expert-class dentist</p>
@@ -298,29 +319,44 @@
           </div><!-- site-confidient__sign-learn -->
           </div><!-- site-confidient__inner -->
 
-          <img class="site-confidient__img" src="img/confidient-section.jpg" alt="Doctor and little girl" width="750" height="600" srcset="img/confidient-section.jpg 1x, img/confidient-section@2x.jpg 2x">
+          <picture>
+            <!-- max-width 375px -->
+            <source media="(max-width:375px)" srcset="img/mini-confidient-section.jpg 1x, img/mini-confidient-section@2x.jpg 2x">
+      
+            <!-- Default image -->
+            <img class="site-confidient__img" src="img/confidient-section.jpg" alt="Doctor and little girl" width="750" height="600" srcset="img/confidient-section.jpg 1x, img/confidient-section@2x.jpg 2x">
+          </picture>
         </div><!-- container--wide site-confidient__container -->
       </section><!-- site-confidient -->
 
       <section class="site-reviews">
         <div class="container site-reviews__container">
           <div class="site-reviews__inner">
-            <h2 class="site-reviews__header">Reviews from our patients</h2>
-            <p class="site-reviews__text">Here are the latest reviews from our regular customers. <br> You can also leave your review by clicking on the link below.</p>
+            <h2 class="site-reviews__header site-reviews__header--first">Reviews from our patients</h2>
+            <h2 class="site-reviews__header site-reviews__header--second">Last review from our customer</h2>
+            <p class="site-reviews__text">Here are the latest reviews from our regular customers. You can also leave your review by clicking on the link below.</p>
           </div><!-- site-reviews__inner -->
           
           <ul class="site-reviews__list">
             <li class="site-reviews__iteam">
-              <img class="site-reviews__img" src="img/ivanov-ivan.jpg" alt="Picture of Ivanov" width="354" height="240" srcset="img/ivanov-ivan.jpg 1x, img/ivanov-ivan@2x.jpg 2x">
+
+              <picture>
+                <!-- max-width 375px -->
+                <source media="(max-width:375px)" srcset="img/mini-ivanov-ivan.jpg 1x, img/mini-ivanov-ivan@2x.jpg 2x">
+          
+                <!-- Default image -->
+                <img class="site-reviews__img" src="img/ivanov-ivan.jpg" alt="Picture of Ivanov" width="354" height="240" srcset="img/ivanov-ivan.jpg 1x, img/ivanov-ivan@2x.jpg 2x">
+              </picture>
+
               <p class="site-reviews__name">Ivanov Ivan</p>
               <p class="site-reviews__iteam-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
             </li>
-            <li class="site-reviews__iteam">
+            <li class="site-reviews__iteam site-reviews__iteam--other">
               <img class="site-reviews__img" src="img/petrov-petr.jpg" alt="Picture of Ivanov" width="354" height="240" srcset="img/petrov-petr.jpg 1x, img/petrov-petr@2x.jpg 2x">
               <p class="site-reviews__name">Vasilisova Vasilisa</p>
               <p class="site-reviews__iteam-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
             </li>
-            <li class="site-reviews__iteam">
+            <li class="site-reviews__iteam site-reviews__iteam--other">
               <img class="site-reviews__img" src="img/petrov-petr.jpg" alt="Picture of Ivanov" width="354" height="240" srcset="img/petrov-petr.jpg 1x, img/petrov-petr@2x.jpg 2x">
               <p class="site-reviews__name">Petrov Petr</p>
               <p class="site-reviews__iteam-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
@@ -328,8 +364,53 @@
           </ul><!-- site-reviews__list -->
 
           <a class="site-reviews__link" href="#">Give feedback</a>
-        </div><!-- site-reviews__iteam -->
+        </div><!-- container site-reviews__container -->
       </section><!-- site-reviews -->
+
+      <section class="site-location">
+        <div class="container--wide site-location__container">
+          <div class="site-location__inner">
+            <h2 class="site-location__header">Convenient location and working hours</h2>
+            <p class="site-location__text">Our clinic is located in the center of the Sverdlovsk district, at the address: Raboche-Krestyanskaya Street 6. <br>From the bus stop “Family” hypermarket to our dental clinic - 5 minutes on foot.</p>
+          </div><!-- site-location__inner -->
+
+          <div class="location__wrapper">
+
+            <form class="site-appointment__form form location__form" action="http://echo.htmlacademy.ru" method="POST">
+              <h3 class="form__heading">Appointment</h3>
+              <div class="form__inner">
+                <label class="form__label" for="name"></label>
+                <input class="form__input" id="name" name="name" type="text" placeholder="Name">
+              </div>
+              <div class="form__inner">
+                <label class="form__label" for="tel"></label>
+                <input class="form__input" id="tel" type="tel" name="tel" placeholder="Phone" pattern="^(?:\d{10,12}|\+\d{10,12}|\w+@\w+\.\w{2,4})$">
+              </div>
+  
+              <button class="form__button">Appointment</button>
+  
+              <div class="form__bottom">
+                <p class="form__text">I give my consent to the storage and processing of personal data</p>
+  
+                <div class="form__true"></div>
+              </div>
+            </form>
+            
+            <a href="https://g.page/najottalim?share" target="_blank"><img class="location__logo-icon" src="img/location-logo-icon.png" alt="Clinic location" width="277" height="81" srcset="img/location-logo-icon.png 1x, img/location-logo-icon@2x.png 2x"></a>
+
+            <a class="location__link" href="https://g.page/najottalim?share" target="_blank">
+
+              <picture>
+                <!-- max-width 375px -->
+                <source media="(max-width:375px)" srcset="img/mini-location-card.jpg 1x, img/mini-location-card@2x.jpg 2x">
+          
+                <!-- Default image -->
+                <img class="location__img" src="img/location-card.jpg" alt="Dental clinic location" width="1920" height="760" srcset="img/location-card.jpg 1x, img/location-card@2x.jpg 2x">
+              </picture>
+            </a>
+          </div><!-- location__wrapper -->
+        </div><!-- container site-location__container -->
+      </section><!-- site-location -->
   </main><!-- site-main -->
 
 

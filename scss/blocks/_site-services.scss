@@ -68,8 +68,8 @@
   height: 49px;
 }
 
-.service__iteam ~ .service__iteam {
-  margin-left: 34px;
+.service__iteam:not(:last-child) {
+  margin-right: 34px;
 }
 
 .service__iteam {
@@ -154,4 +154,14 @@
   font-size: 18px;
   line-height: 21px;
   color: #0a60c3;
+}
+
+@include breakpoint-down (1024px) {
+
+}
+
+@include breakpoint-down (375px) {
+  .site-services__button {
+    display: none;
+  }
 }

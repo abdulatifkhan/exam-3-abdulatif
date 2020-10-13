@@ -71,3 +71,13 @@
   line-height: 25px;
   font-weight: 300;
 }
+
+@include breakpoint-down (1024px) {
+
+}
+
+@include breakpoint-down (375px) {
+  .site-appointment__list {
+    display: none;
+  }
+}

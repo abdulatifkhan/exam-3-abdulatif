@@ -1,8 +1,19 @@
 .site-professional__container {
-  padding: 70px 0px;
+  padding: 70px 10px;
 }
 
+.site-professional__bundle {
+  background-image: url(../../img/logo-light.png);
+  background-repeat: no-repeat;
+  background-position: center 70px;
+  background-size: 262px 94px;
+}
+
+
 .site-professional__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   margin-bottom: 13px;
   font-weight: 500;
@@ -10,6 +21,16 @@
   line-height: 42px;
   color: $black;
   text-align: center;
+
+  &::before {
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 16px;
+    width: 50px;
+    height: 4px;
+    background-color: $orange;
+    content: "";
+  }
 }
 
 .site-professional__text {
@@ -57,4 +78,18 @@
   font-size: 18px;
   line-height: 21px;
   color: $dark;
+}
+
+@include breakpoint-down (1024px) {
+
+}
+
+@include breakpoint-down (375px) {
+  .site-professional__list {
+    overflow: hidden;
+  }
+
+  .professional-list__iteam--other {
+    display: none;
+  }
 }
