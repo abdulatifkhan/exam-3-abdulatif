@@ -127,11 +127,12 @@
   .site-modern__img {
     position: relative;
     z-index: 10;
-    // top: 0;
+    top: 0;
+    right: 0;
     // right: calc(50% + 210px);
     display: inline-block;
-    width: 455px;
-    height: 304px;
+    width: 375px;
+    height: 301px;
   }
 
   .site-modern__inner {

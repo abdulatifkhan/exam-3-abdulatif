@@ -1,7 +1,11 @@
+.site-main {
+  margin-top: 120px;
+}
+
 .site-intro {
   // background-color: #cfcdcd;
   background-image: url(../../img/general-section.jpg);
-  background-position: center 60px;
+  background-position: center 30px;
   background-repeat: no-repeat;
   background-size: 1920px 900px;
 }
@@ -95,6 +99,10 @@
 }
 
 @include breakpoint-down (1024px) {
+  .site-main {
+    margin-top: 0px;
+  }
+
   .site-intro__container {
     top: 68px;
     padding-left: 30px;
